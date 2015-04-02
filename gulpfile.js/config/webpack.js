@@ -9,17 +9,6 @@ module.exports = function(env) {
   var publicPath = 'assets/javascripts/'
 
   var webpackConfig = {
-    entry: {
-      page1: [jsSrc + 'page1.js'],
-      page2: [jsSrc + 'page2.js']
-    },
-
-    output: {
-      path: jsDest,
-      filename: env === 'production' ? '[name]-[hash].js' : '[name].js',
-      publicPath: publicPath
-    },
-
     plugins: [],
 
     resolve: {
@@ -38,6 +27,18 @@ module.exports = function(env) {
   }
 
   if(env !== 'test') {
+    // Tests don't need the app entry points
+    webpackConfig.entry = {
+      page1: [jsSrc + 'page1.js'],
+      page2: [jsSrc + 'page2.js']
+    }
+
+    webpackConfig.output = {
+      path: jsDest,
+      filename: env === 'production' ? '[name]-[hash].js' : '[name].js',
+      publicPath: publicPath
+    }
+
     // Factor out common dependencies into a shared.js
     webpackConfig.plugins.push(
       new webpack.optimize.CommonsChunkPlugin({
