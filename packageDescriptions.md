@@ -1,4 +1,4 @@
-"dependencies": {
+1"dependencies": {
     "babel-core": "^4.7.16", // ES6 translator 5.1.10
     "babel-loader": "^4.2.0", // Bable module for webpack 5.0.0
     "babelify": "^5.0.3", // Bable broswerify transform 6.0.2
@@ -21,7 +21,7 @@
     "gulp-sizereport": "^1.0.2", // Display the size and gzipped size of your project, trigger alarm when file size is higher as expected 1.0.2
     "gulp-sourcemaps": "^1.2.8", // Source map support for Gulp 1.5.2
     "gulp-swig": "^0.7.4", // A simple, powerful, and extendable JavaScript Template Engine. 0.7.4 req: node >0.8, SWIG 1.4.*
-    "gulp-uglify": "^1.0.2", // Minify files with UglifyJS.
+    "gulp-uglify": "^1.0.2", // Minify files with UglifyJS. 1.2.0
     "gulp-util": "^3.0.0", // Utility functions for gulp plugins 3.0.4
     "gulp-watch": "^4.1.1", // Watch, that actually is an endless stream 4.2.4
     "karma": "^0.12.31", // Spectacular Test Runner for JavaScript. 0.12.31
