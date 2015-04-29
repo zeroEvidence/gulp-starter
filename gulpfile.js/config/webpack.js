@@ -30,7 +30,7 @@ module.exports = function(env) {
       loaders: [
         {
           test: /\.js$/,
-          loader: 'babel-loader?experimental',
+          loader: 'babel-loader',
           exclude: /node_modules/
         }
       ]
