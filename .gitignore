@@ -1,4 +1,6 @@
 .DS_Store
-build
+.sass-cache
+public
 Desktop.ini
 node_modules
+app/assets/stylesheets/generated
